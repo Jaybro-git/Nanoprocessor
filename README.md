@@ -1,6 +1,6 @@
 # Nanoprocessor
 
-This repository contains the VHDL source files and the implementations of a 4 bit Nanoprocessor. This nanoprocessor is capable of executing 4 basic instuctions and perform basic arithmetic operations. 
+This repository contains the VHDL source files and the implementations of a 4 bit Nanoprocessor. This nanoprocessor is capable of executing 4 basic instructions and perform basic arithmetic operations. 
 
 ## Directory Structure
 
