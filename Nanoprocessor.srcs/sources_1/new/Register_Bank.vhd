@@ -50,10 +50,10 @@ architecture Behavioral of Register_Bank is
 
 component Register_4Bit
     Port ( D : in STD_LOGIC_VECTOR (3 downto 0);
-           Res : in STD_LOGIC;
-           EN : in STD_LOGIC;
-           Clk : in STD_LOGIC;
-           Q : out STD_LOGIC_VECTOR (3 downto 0));
+       EN : in STD_LOGIC;
+       Clk : in STD_LOGIC;
+       Reset : in STD_LOGIC;
+       Q : out STD_LOGIC_VECTOR (3 downto 0));
 end component;
 
 component Decoder_3_to_8
@@ -71,20 +71,20 @@ begin
                         Y=>Select_Reg );
                         
     Reg_0 : Register_4bit
-                Port map ( D=>"0000", EN=>Select_Reg(0), Clk=>Clk, Res=>Reset, Q=> Reg0 ); --Hardcoded to zero
+                Port map ( D=>"0000", EN=>Select_Reg(0), Clk=>Clk, Reset=>Reset, Q=> Reg0 ); --Hardcoded to zero
     Reg_1 : Register_4bit
-                Port map ( D=>Data, EN=>Select_Reg(1), Clk=>Clk, Res=>Reset, Q=> Reg1 );
+                Port map ( D=>Data, EN=>Select_Reg(1), Clk=>Clk, Reset=>Reset, Q=> Reg1 );
     Reg_2 : Register_4bit
-                Port map ( D=>Data, EN=>Select_Reg(2), Clk=>Clk, Res=>Reset, Q=> Reg2 );
+                Port map ( D=>Data, EN=>Select_Reg(2), Clk=>Clk, Reset=>Reset, Q=> Reg2 );
     Reg_3 : Register_4bit
-                Port map ( D=>Data, EN=>Select_Reg(3), Clk=>Clk, Res=>Reset, Q=> Reg3 );
+                Port map ( D=>Data, EN=>Select_Reg(3), Clk=>Clk, Reset=>Reset, Q=> Reg3 );
     Reg_4 : Register_4bit
-                Port map ( D=>Data, EN=>Select_Reg(4), Clk=>Clk, Res=>Reset, Q=> Reg4 );
+                Port map ( D=>Data, EN=>Select_Reg(4), Clk=>Clk, Reset=>Reset, Q=> Reg4 );
     Reg_5 : Register_4bit
-                Port map ( D=>Data, EN=>Select_Reg(5), Clk=>Clk, Res=>Reset, Q=> Reg5 );
+                Port map ( D=>Data, EN=>Select_Reg(5), Clk=>Clk, Reset=>Reset, Q=> Reg5 );
     Reg_6 : Register_4bit
-                Port map ( D=>Data, EN=>Select_Reg(6), Clk=>Clk, Res=>Reset, Q=> Reg6 );
+                Port map ( D=>Data, EN=>Select_Reg(6), Clk=>Clk, Reset=>Reset, Q=> Reg6 );
     Reg_7 : Register_4bit
-                Port map ( D=>Data, EN=>Select_Reg(7), Clk=>Clk, Res=>Reset, Q=> Reg7 );                      
+                Port map ( D=>Data, EN=>Select_Reg(7), Clk=>Clk, Reset=>Reset, Q=> Reg7 );                      
                   
 end Behavioral;

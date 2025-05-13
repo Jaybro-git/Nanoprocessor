@@ -32,12 +32,22 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Mux_2way_4bit is
---  Port ( );
+    Port ( I0, I1 : in STD_LOGIC_VECTOR(3 downto 0);
+           Sel : in STD_LOGIC;
+           RegOut : out STD_LOGIC_VECTOR(3 downto 0));
 end Mux_2way_4bit;
 
 architecture Behavioral of Mux_2way_4bit is
 
 begin
+    process(I0, I1, Sel)
+    begin
+        if Sel = '0' then
+            RegOut <= I0;
+        else
+            RegOut <= I1;
+        end if;
+    end process;
 
 
 end Behavioral;
