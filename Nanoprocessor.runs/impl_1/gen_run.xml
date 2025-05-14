@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1747120424">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1747201887">
   <File Type="BITSTR-BMM" Name="Nanoprocessor_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="Nanoprocessor_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="Nanoprocessor_timing_summary_init.rpt"/>
@@ -188,12 +188,11 @@
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="Nanoprocessor"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PSRCDIR/constrs_1/new/Basys3Labs.xdc">
+    <File Path="$PPRDIR/../Lab 8/Basys3Labs.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

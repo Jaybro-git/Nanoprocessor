@@ -43,16 +43,16 @@ architecture Behavioral of Register_4bit is
 
 begin
 
-    process (Clk,EN,Reset) begin
-        if Reset = '0' then
-            if (rising_edge(Clk)) then
+    process (Clk) begin
+        if (rising_edge(Clk)) then
+            if Reset = '0' then
                  if EN = '1' then
                     Q <= D;
                  end if;
+            else
+                Q <= "0000";
             end if;
-        else
-            Q <= "0000";
-        end if;
+         end if;
     end process;
       
 end Behavioral;

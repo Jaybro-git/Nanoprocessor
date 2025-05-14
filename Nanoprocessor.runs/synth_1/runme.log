@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 30096 
+INFO: Helper process launched with PID 15136 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 435.020 ; gain = 95.117
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 434.895 ; gain = 95.574
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Nanoprocessor' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:44]
 INFO: [Synth 8-3491] module 'Slow_Clk' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Slow_Clk.vhd:34' bound to instance 'Slow_Clk_0' of component 'Slow_Clk' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:136]
@@ -99,18 +99,54 @@ WARNING: [Synth 8-3917] design Nanoprocessor has port Anode[2] driven by constan
 WARNING: [Synth 8-3917] design Nanoprocessor has port Anode[1] driven by constant 1
 WARNING: [Synth 8-3917] design Nanoprocessor has port Anode[0] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 490.766 ; gain = 150.863
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 490.527 ; gain = 151.207
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 490.766 ; gain = 150.863
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 490.527 ; gain = 151.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 490.527 ; gain = 151.207
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/janit/OneDrive/Desktop/Vivado/Lab 8/Basys3Labs.xdc]
+Finished Parsing XDC File [C:/Users/janit/OneDrive/Desktop/Vivado/Lab 8/Basys3Labs.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/janit/OneDrive/Desktop/Vivado/Lab 8/Basys3Labs.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Nanoprocessor_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Nanoprocessor_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 817.730 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 817.730 ; gain = 478.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
-INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 490.766 ; gain = 150.863
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 817.730 ; gain = 478.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 817.730 ; gain = 478.410
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "Clk_status" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -118,7 +154,7 @@ INFO: [Synth 8-5544] ROM "ROM" won't be mapped to Block RAM because address size
 INFO: [Synth 8-5544] ROM "Jump_Flag" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "sevenSegment_ROM" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 490.766 ; gain = 150.863
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 817.730 ; gain = 478.410
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -126,7 +162,6 @@ Report RTL Partitions:
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-No constraint files found.
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -144,11 +179,11 @@ Detailed RTL Component Info :
 	   9 Input     12 Bit        Muxes := 1     
 	  17 Input      7 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 9     
 	   5 Input      3 Bit        Muxes := 2     
 	   2 Input      3 Bit        Muxes := 3     
 	   4 Input      3 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 11    
 	   4 Input      1 Bit        Muxes := 1     
 	   6 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
@@ -190,6 +225,9 @@ Module Register_4bit
 Detailed RTL Component Info : 
 +---Registers : 
 	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 Module HA 
 Detailed RTL Component Info : 
 +---XORs : 
@@ -222,7 +260,6 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-No constraint files found.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
@@ -236,13 +273,13 @@ WARNING: [Synth 8-3917] design Nanoprocessor has port Anode[3] driven by constan
 WARNING: [Synth 8-3917] design Nanoprocessor has port Anode[2] driven by constant 1
 WARNING: [Synth 8-3917] design Nanoprocessor has port Anode[1] driven by constant 1
 WARNING: [Synth 8-3917] design Nanoprocessor has port Anode[0] driven by constant 0
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_0/Q_reg[3]' (FDCE) to 'Register_Bank_0/Reg_0/Q_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_0/Q_reg[2]' (FDCE) to 'Register_Bank_0/Reg_0/Q_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_0/Q_reg[1]' (FDCE) to 'Register_Bank_0/Reg_0/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_0/Q_reg[3]' (FDE) to 'Register_Bank_0/Reg_0/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_0/Q_reg[2]' (FDE) to 'Register_Bank_0/Reg_0/Q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_0/Q_reg[1]' (FDE) to 'Register_Bank_0/Reg_0/Q_reg[0]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Register_Bank_0/Reg_0/Q_reg[0] )
 WARNING: [Synth 8-3332] Sequential element (Register_Bank_0/Reg_0/Q_reg[0]) is unused and will be removed from module Nanoprocessor.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 637.320 ; gain = 297.418
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 817.730 ; gain = 478.410
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -250,12 +287,17 @@ Report RTL Partitions:
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-No constraint files found.
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:48 . Memory (MB): peak = 820.266 ; gain = 480.945
+---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 637.320 ; gain = 297.418
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:49 . Memory (MB): peak = 842.109 ; gain = 502.789
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -266,28 +308,20 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_6/Q_reg[1]' (FDCE) to 'Register_Bank_0/Reg_3/Q_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_3/Q_reg[1]' (FDCE) to 'Register_Bank_0/Reg_5/Q_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_4/Q_reg[1]' (FDCE) to 'Register_Bank_0/Reg_5/Q_reg[1]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Register_Bank_0/Reg_5/Q_reg[1] )
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_6/Q_reg[0]' (FDCE) to 'Register_Bank_0/Reg_3/Q_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_3/Q_reg[0]' (FDCE) to 'Register_Bank_0/Reg_5/Q_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_4/Q_reg[0]' (FDCE) to 'Register_Bank_0/Reg_5/Q_reg[0]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Register_Bank_0/Reg_5/Q_reg[0] )
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_6/Q_reg[3]' (FDCE) to 'Register_Bank_0/Reg_3/Q_reg[3]'
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_3/Q_reg[3]' (FDCE) to 'Register_Bank_0/Reg_5/Q_reg[3]'
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_4/Q_reg[3]' (FDCE) to 'Register_Bank_0/Reg_5/Q_reg[3]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Register_Bank_0/Reg_5/Q_reg[3] )
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_6/Q_reg[2]' (FDCE) to 'Register_Bank_0/Reg_3/Q_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_3/Q_reg[2]' (FDCE) to 'Register_Bank_0/Reg_5/Q_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_4/Q_reg[2]' (FDCE) to 'Register_Bank_0/Reg_5/Q_reg[2]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Register_Bank_0/Reg_5/Q_reg[2] )
-WARNING: [Synth 8-3332] Sequential element (Register_Bank_0/Reg_5/Q_reg[1]) is unused and will be removed from module Nanoprocessor.
-WARNING: [Synth 8-3332] Sequential element (Register_Bank_0/Reg_5/Q_reg[0]) is unused and will be removed from module Nanoprocessor.
-WARNING: [Synth 8-3332] Sequential element (Register_Bank_0/Reg_5/Q_reg[3]) is unused and will be removed from module Nanoprocessor.
-WARNING: [Synth 8-3332] Sequential element (Register_Bank_0/Reg_5/Q_reg[2]) is unused and will be removed from module Nanoprocessor.
+INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_6/Q_reg[1]' (FDE) to 'Register_Bank_0/Reg_3/Q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_3/Q_reg[1]' (FDE) to 'Register_Bank_0/Reg_4/Q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_4/Q_reg[1]' (FDE) to 'Register_Bank_0/Reg_5/Q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_6/Q_reg[0]' (FDE) to 'Register_Bank_0/Reg_3/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_3/Q_reg[0]' (FDE) to 'Register_Bank_0/Reg_4/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_4/Q_reg[0]' (FDE) to 'Register_Bank_0/Reg_5/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_6/Q_reg[3]' (FDE) to 'Register_Bank_0/Reg_3/Q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_3/Q_reg[3]' (FDE) to 'Register_Bank_0/Reg_4/Q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_4/Q_reg[3]' (FDE) to 'Register_Bank_0/Reg_5/Q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_6/Q_reg[2]' (FDE) to 'Register_Bank_0/Reg_3/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_3/Q_reg[2]' (FDE) to 'Register_Bank_0/Reg_4/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_4/Q_reg[2]' (FDE) to 'Register_Bank_0/Reg_5/Q_reg[2]'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 637.320 ; gain = 297.418
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:49 . Memory (MB): peak = 846.227 ; gain = 506.906
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -311,7 +345,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 637.320 ; gain = 297.418
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:50 . Memory (MB): peak = 846.227 ; gain = 506.906
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -324,7 +358,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 637.320 ; gain = 297.418
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 846.227 ; gain = 506.906
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -336,25 +370,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 637.320 ; gain = 297.418
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 846.227 ; gain = 506.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 637.320 ; gain = 297.418
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 846.227 ; gain = 506.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 637.320 ; gain = 297.418
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 846.227 ; gain = 506.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 637.320 ; gain = 297.418
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 846.227 ; gain = 506.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -373,38 +407,38 @@ Report Cell Usage:
 |1     |BUFG   |     1|
 |2     |CARRY4 |     8|
 |3     |LUT1   |     1|
-|4     |LUT2   |     1|
-|5     |LUT3   |     6|
-|6     |LUT4   |    12|
-|7     |LUT5   |    22|
-|8     |LUT6   |     4|
-|9     |FDCE   |    12|
-|10    |FDRE   |    37|
-|11    |IBUF   |     2|
-|12    |OBUF   |    17|
+|4     |LUT2   |     3|
+|5     |LUT3   |     2|
+|6     |LUT4   |    16|
+|7     |LUT5   |    25|
+|8     |LUT6   |     5|
+|9     |FDRE   |    53|
+|10    |IBUF   |     2|
+|11    |OBUF   |    17|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+--------------------+----------------+------+
 |      |Instance            |Module          |Cells |
 +------+--------------------+----------------+------+
-|1     |top                 |                |   123|
-|2     |  Program_Counter_0 |Program_Counter |    30|
-|3     |    D_FF_0          |D_FF            |     5|
-|4     |    D_FF_1          |D_FF_2          |    15|
-|5     |    D_FF_2          |D_FF_3          |    10|
-|6     |  Register_Bank_0   |Register_Bank   |    19|
+|1     |top                 |                |   133|
+|2     |  Program_Counter_0 |Program_Counter |    36|
+|3     |    D_FF_0          |D_FF            |     1|
+|4     |    D_FF_1          |D_FF_3          |    18|
+|5     |    D_FF_2          |D_FF_4          |    17|
+|6     |  Register_Bank_0   |Register_Bank   |    23|
 |7     |    Reg_1           |Register_4bit   |     4|
 |8     |    Reg_2           |Register_4bit_0 |     4|
-|9     |    Reg_7           |Register_4bit_1 |    11|
-|10    |  Slow_Clk_0        |Slow_Clk        |    54|
+|9     |    Reg_5           |Register_4bit_1 |     4|
+|10    |    Reg_7           |Register_4bit_2 |    11|
+|11    |  Slow_Clk_0        |Slow_Clk        |    54|
 +------+--------------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 637.320 ; gain = 297.418
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 846.227 ; gain = 506.906
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 17 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 637.320 ; gain = 297.418
-Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 637.320 ; gain = 297.418
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 846.227 ; gain = 179.703
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:51 . Memory (MB): peak = 846.227 ; gain = 506.906
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -414,11 +448,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-111 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+110 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 727.586 ; gain = 400.184
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:54 . Memory (MB): peak = 846.227 ; gain = 519.008
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.runs/synth_1/Nanoprocessor.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Nanoprocessor_utilization_synth.rpt -pb Nanoprocessor_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 727.586 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue May 13 12:00:13 2025...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 846.227 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed May 14 11:21:00 2025...

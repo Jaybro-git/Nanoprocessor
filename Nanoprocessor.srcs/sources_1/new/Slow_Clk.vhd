@@ -46,7 +46,7 @@ begin
     process (Clk_in) begin
     if (rising_edge(Clk_in)) then
     count <= count +1 ;
-        if (count = 5) then -- set to 100 000 000
+        if (count = 50000000) then -- set to 100 000 000
              Clk_status <= NOT (Clk_status);
              Clk_out <= Clk_status ;
              count <= 1;
