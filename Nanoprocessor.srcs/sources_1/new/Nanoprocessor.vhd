@@ -36,17 +36,10 @@ entity Nanoprocessor is
        Reset : in STD_LOGIC;
        Overflow : out STD_LOGIC;
        Zero : out STD_LOGIC;
-       Reg_7_Out : out STD_LOGIC_VECTOR (3 downto 0);
-       Seg_7_Out : out STD_LOGIC_VECTOR (6 downto 0);
-       Anode : out STD_LOGIC_VECTOR (3 downto 0));
+       Reg_7_Out : out STD_LOGIC_VECTOR (3 downto 0));
 end Nanoprocessor;
 
 architecture Behavioral of Nanoprocessor is
-
-component Slow_Clk
-    Port ( Clk_in : in STD_LOGIC;
-       Clk_out : out STD_LOGIC);
-end component;
 
 component Register_Bank
     Port ( Clk : in STD_LOGIC;
@@ -126,23 +119,18 @@ component LUT_16_7
        data : out STD_LOGIC_VECTOR (6 downto 0));
 end component;
 
-signal SlowClk, load_sel, sub, jflag : STD_LOGIC;
+signal load_sel, sub, jflag : STD_LOGIC;
 signal Pointer, PCaddress, reg_en, jump_add, adderOut, mux_1, mux_2 : STD_LOGIC_VECTOR (2 downto 0);
 signal Instruction : STD_LOGIC_VECTOR (11 downto 0);
 signal IVal, result, reg_data, r0,r1,r2,r3,r4,r5,r6,r7, data1, data2 :STD_LOGIC_VECTOR (3 downto 0);
 
 begin
 
-Slow_Clk_0 : Slow_Clk
-port map (
-    Clk_in=> Clk,
-    Clk_out => SlowClk);
-
 Program_Counter_0 : Program_Counter
 port map(
    D => Pointer,
    Res => Reset,
-   Clk => SlowClk,
+   Clk => Clk,
    Q => PCaddress);
 
 Program_Rom_0 : Program_Rom
@@ -165,7 +153,7 @@ port map (
                       
 Register_Bank_0 : Register_Bank
 port map (
-  Clk    => SlowClk,
+  Clk    => Clk,
   RegEN  => reg_en,
   Data   => reg_data,
   Reset  => Reset,
@@ -218,12 +206,6 @@ port map (
   Sel => jflag,
   RegOut => Pointer);
 
-LUT_16_7_0 : LUT_16_7
-port map (
-  address => r7,
-  data    => Seg_7_Out);
-
 Reg_7_Out <= r7;
-Anode <= "1110";
   
 end Behavioral;

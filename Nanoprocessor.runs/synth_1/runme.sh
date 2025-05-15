@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log Nanoprocessor.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Nanoprocessor.tcl
+EAStep vivado -log MainProgram.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MainProgram.tcl

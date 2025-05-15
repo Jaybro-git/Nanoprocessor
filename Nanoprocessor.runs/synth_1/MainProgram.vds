@@ -2,28 +2,31 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Wed May 14 11:19:54 2025
-# Process ID: 14932
+# Start of session at: Wed May 14 21:43:32 2025
+# Process ID: 22548
 # Current directory: C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.runs/synth_1
-# Command line: vivado.exe -log Nanoprocessor.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Nanoprocessor.tcl
-# Log file: C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.runs/synth_1/Nanoprocessor.vds
+# Command line: vivado.exe -log MainProgram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MainProgram.tcl
+# Log file: C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.runs/synth_1/MainProgram.vds
 # Journal file: C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source Nanoprocessor.tcl -notrace
-Command: synth_design -top Nanoprocessor -part xc7a35tcpg236-1
+source MainProgram.tcl -notrace
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 326.965 ; gain = 97.625
+Command: synth_design -top MainProgram -part xc7a35tcpg236-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 15136 
+INFO: Helper process launched with PID 8480 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 434.895 ; gain = 95.574
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 435.137 ; gain = 95.848
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Nanoprocessor' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:44]
-INFO: [Synth 8-3491] module 'Slow_Clk' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Slow_Clk.vhd:34' bound to instance 'Slow_Clk_0' of component 'Slow_Clk' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'MainProgram' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/MainProgram.vhd:44]
+INFO: [Synth 8-3491] module 'Slow_Clk' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Slow_Clk.vhd:34' bound to instance 'Slow_Clk_0' of component 'Slow_Clk' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/MainProgram.vhd:69]
 INFO: [Synth 8-638] synthesizing module 'Slow_Clk' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Slow_Clk.vhd:39]
 INFO: [Synth 8-256] done synthesizing module 'Slow_Clk' (1#1) [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Slow_Clk.vhd:39]
-INFO: [Synth 8-3491] module 'Program_Counter' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Program_Counter.vhd:34' bound to instance 'Program_Counter_0' of component 'Program_Counter' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:141]
+INFO: [Synth 8-3491] module 'Nanoprocessor' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:34' bound to instance 'Nanoprocessor_0' of component 'Nanoprocessor' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/MainProgram.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'Nanoprocessor' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:42]
+INFO: [Synth 8-3491] module 'Program_Counter' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Program_Counter.vhd:34' bound to instance 'Program_Counter_0' of component 'Program_Counter' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:129]
 INFO: [Synth 8-638] synthesizing module 'Program_Counter' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Program_Counter.vhd:41]
 INFO: [Synth 8-3491] module 'D_FF' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/D_FF.vhd:34' bound to instance 'D_FF_0' of component 'D_FF' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Program_Counter.vhd:52]
 INFO: [Synth 8-638] synthesizing module 'D_FF' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/D_FF.vhd:42]
@@ -31,13 +34,13 @@ INFO: [Synth 8-256] done synthesizing module 'D_FF' (2#1) [C:/Users/janit/OneDri
 INFO: [Synth 8-3491] module 'D_FF' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/D_FF.vhd:34' bound to instance 'D_FF_1' of component 'D_FF' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Program_Counter.vhd:59]
 INFO: [Synth 8-3491] module 'D_FF' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/D_FF.vhd:34' bound to instance 'D_FF_2' of component 'D_FF' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Program_Counter.vhd:66]
 INFO: [Synth 8-256] done synthesizing module 'Program_Counter' (3#1) [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Program_Counter.vhd:41]
-INFO: [Synth 8-3491] module 'Program_ROM' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Program_ROM.vhd:35' bound to instance 'Program_Rom_0' of component 'Program_ROM' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:148]
+INFO: [Synth 8-3491] module 'Program_ROM' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Program_ROM.vhd:35' bound to instance 'Program_Rom_0' of component 'Program_ROM' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:136]
 INFO: [Synth 8-638] synthesizing module 'Program_ROM' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Program_ROM.vhd:40]
 INFO: [Synth 8-256] done synthesizing module 'Program_ROM' (4#1) [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Program_ROM.vhd:40]
-INFO: [Synth 8-3491] module 'Instruction_Decoder' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Instruction_Decoder.vhd:34' bound to instance 'Instruction_Decoder_0' of component 'Instruction_Decoder' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:153]
+INFO: [Synth 8-3491] module 'Instruction_Decoder' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Instruction_Decoder.vhd:34' bound to instance 'Instruction_Decoder_0' of component 'Instruction_Decoder' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:141]
 INFO: [Synth 8-638] synthesizing module 'Instruction_Decoder' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Instruction_Decoder.vhd:47]
 INFO: [Synth 8-256] done synthesizing module 'Instruction_Decoder' (5#1) [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Instruction_Decoder.vhd:47]
-INFO: [Synth 8-3491] module 'Register_Bank' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Register_Bank.vhd:34' bound to instance 'Register_Bank_0' of component 'Register_Bank' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:166]
+INFO: [Synth 8-3491] module 'Register_Bank' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Register_Bank.vhd:34' bound to instance 'Register_Bank_0' of component 'Register_Bank' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:154]
 INFO: [Synth 8-638] synthesizing module 'Register_Bank' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Register_Bank.vhd:49]
 INFO: [Synth 8-3491] module 'Decoder_3_to_8' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Decoder_3_to_8.vhd:34' bound to instance 'Decoder_3_to_8_0' of component 'Decoder_3_to_8' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Register_Bank.vhd:68]
 INFO: [Synth 8-638] synthesizing module 'Decoder_3_to_8' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Decoder_3_to_8.vhd:40]
@@ -57,12 +60,12 @@ INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/janit/OneDrive
 INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Register_4bit.vhd:34' bound to instance 'Reg_6' of component 'Register_4Bit' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Register_Bank.vhd:85]
 INFO: [Synth 8-3491] module 'Register_4bit' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Register_4bit.vhd:34' bound to instance 'Reg_7' of component 'Register_4Bit' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Register_Bank.vhd:87]
 INFO: [Synth 8-256] done synthesizing module 'Register_Bank' (9#1) [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Register_Bank.vhd:49]
-INFO: [Synth 8-3491] module 'Mux_8way_4bit' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Mux_8way_4bit.vhd:34' bound to instance 'Mux_8way_4bit_0' of component 'Mux_8way_4bit' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:181]
+INFO: [Synth 8-3491] module 'Mux_8way_4bit' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Mux_8way_4bit.vhd:34' bound to instance 'Mux_8way_4bit_0' of component 'Mux_8way_4bit' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:169]
 INFO: [Synth 8-638] synthesizing module 'Mux_8way_4bit' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Mux_8way_4bit.vhd:40]
 INFO: [Synth 8-226] default block is never used [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Mux_8way_4bit.vhd:44]
 INFO: [Synth 8-256] done synthesizing module 'Mux_8way_4bit' (10#1) [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Mux_8way_4bit.vhd:40]
-INFO: [Synth 8-3491] module 'Mux_8way_4bit' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Mux_8way_4bit.vhd:34' bound to instance 'Mux_8way_4bit_1' of component 'Mux_8way_4bit' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:187]
-INFO: [Synth 8-3491] module 'Add_Sub_Unit' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Add_Sub_Unit.vhd:34' bound to instance 'Add_Sub_Unit_0' of component 'Add_Sub_Unit' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:193]
+INFO: [Synth 8-3491] module 'Mux_8way_4bit' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Mux_8way_4bit.vhd:34' bound to instance 'Mux_8way_4bit_1' of component 'Mux_8way_4bit' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:175]
+INFO: [Synth 8-3491] module 'Add_Sub_Unit' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Add_Sub_Unit.vhd:34' bound to instance 'Add_Sub_Unit_0' of component 'Add_Sub_Unit' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:181]
 INFO: [Synth 8-638] synthesizing module 'Add_Sub_Unit' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Add_Sub_Unit.vhd:43]
 INFO: [Synth 8-3491] module 'RCA_4' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/RCA_4.vhd:34' bound to instance 'RCA_4_0' of component 'RCA_4' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Add_Sub_Unit.vhd:63]
 INFO: [Synth 8-638] synthesizing module 'RCA_4' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/RCA_4.vhd:42]
@@ -79,28 +82,29 @@ INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/janit/OneDrive/Desktop/Vi
 INFO: [Synth 8-256] done synthesizing module 'RCA_4' (13#1) [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/RCA_4.vhd:42]
 WARNING: [Synth 8-614] signal 'Cout' is read in the process but is not in the sensitivity list [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Add_Sub_Unit.vhd:74]
 INFO: [Synth 8-256] done synthesizing module 'Add_Sub_Unit' (14#1) [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Add_Sub_Unit.vhd:43]
-INFO: [Synth 8-3491] module 'Mux_2way_4bit' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Mux_2way_4bit.vhd:34' bound to instance 'Mux_2way_4bit_0' of component 'Mux_2way_4bit' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:202]
+INFO: [Synth 8-3491] module 'Mux_2way_4bit' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Mux_2way_4bit.vhd:34' bound to instance 'Mux_2way_4bit_0' of component 'Mux_2way_4bit' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:190]
 INFO: [Synth 8-638] synthesizing module 'Mux_2way_4bit' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Mux_2way_4bit.vhd:40]
 INFO: [Synth 8-256] done synthesizing module 'Mux_2way_4bit' (15#1) [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Mux_2way_4bit.vhd:40]
-INFO: [Synth 8-3491] module 'Adder_3bit' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Adder_3bit.vhd:34' bound to instance 'Adder_3bit_0' of component 'Adder_3bit' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:209]
+INFO: [Synth 8-3491] module 'Adder_3bit' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Adder_3bit.vhd:34' bound to instance 'Adder_3bit_0' of component 'Adder_3bit' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:197]
 INFO: [Synth 8-638] synthesizing module 'Adder_3bit' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Adder_3bit.vhd:40]
 INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/FA.vhd:34' bound to instance 'FA_0' of component 'FA' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Adder_3bit.vhd:56]
 INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/FA.vhd:34' bound to instance 'FA_1' of component 'FA' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Adder_3bit.vhd:65]
 INFO: [Synth 8-3491] module 'FA' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/FA.vhd:34' bound to instance 'FA_2' of component 'FA' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Adder_3bit.vhd:74]
 INFO: [Synth 8-256] done synthesizing module 'Adder_3bit' (16#1) [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Adder_3bit.vhd:40]
-INFO: [Synth 8-3491] module 'Mux_2way_3bit' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Mux_2way_3bit.vhd:34' bound to instance 'Mux_2way_3bit_0' of component 'Mux_2way_3bit' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:214]
+INFO: [Synth 8-3491] module 'Mux_2way_3bit' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Mux_2way_3bit.vhd:34' bound to instance 'Mux_2way_3bit_0' of component 'Mux_2way_3bit' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:202]
 INFO: [Synth 8-638] synthesizing module 'Mux_2way_3bit' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Mux_2way_3bit.vhd:40]
 INFO: [Synth 8-256] done synthesizing module 'Mux_2way_3bit' (17#1) [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Mux_2way_3bit.vhd:40]
-INFO: [Synth 8-3491] module 'LUT_16_7' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/LUT_16_7.vhd:34' bound to instance 'LUT_16_7_0' of component 'LUT_16_7' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:221]
+INFO: [Synth 8-256] done synthesizing module 'Nanoprocessor' (18#1) [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:42]
+INFO: [Synth 8-3491] module 'LUT_16_7' declared at 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/LUT_16_7.vhd:34' bound to instance 'LUT_16_7_0' of component 'LUT_16_7' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/MainProgram.vhd:82]
 INFO: [Synth 8-638] synthesizing module 'LUT_16_7' [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/LUT_16_7.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'LUT_16_7' (18#1) [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/LUT_16_7.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'Nanoprocessor' (19#1) [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd:44]
-WARNING: [Synth 8-3917] design Nanoprocessor has port Anode[3] driven by constant 1
-WARNING: [Synth 8-3917] design Nanoprocessor has port Anode[2] driven by constant 1
-WARNING: [Synth 8-3917] design Nanoprocessor has port Anode[1] driven by constant 1
-WARNING: [Synth 8-3917] design Nanoprocessor has port Anode[0] driven by constant 0
+INFO: [Synth 8-256] done synthesizing module 'LUT_16_7' (19#1) [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/LUT_16_7.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'MainProgram' (20#1) [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/MainProgram.vhd:44]
+WARNING: [Synth 8-3917] design MainProgram has port Anode[3] driven by constant 1
+WARNING: [Synth 8-3917] design MainProgram has port Anode[2] driven by constant 1
+WARNING: [Synth 8-3917] design MainProgram has port Anode[1] driven by constant 1
+WARNING: [Synth 8-3917] design MainProgram has port Anode[0] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 490.527 ; gain = 151.207
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 490.496 ; gain = 151.207
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -113,41 +117,41 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 490.527 ; gain = 151.207
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 490.496 ; gain = 151.207
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 490.527 ; gain = 151.207
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 490.496 ; gain = 151.207
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/janit/OneDrive/Desktop/Vivado/Lab 8/Basys3Labs.xdc]
-Finished Parsing XDC File [C:/Users/janit/OneDrive/Desktop/Vivado/Lab 8/Basys3Labs.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/janit/OneDrive/Desktop/Vivado/Lab 8/Basys3Labs.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Nanoprocessor_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/Nanoprocessor_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/constrs_1/new/Basys3Labs.xdc]
+Finished Parsing XDC File [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/constrs_1/new/Basys3Labs.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/constrs_1/new/Basys3Labs.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MainProgram_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MainProgram_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 817.730 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 817.973 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 817.730 ; gain = 478.410
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 817.973 ; gain = 478.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 817.730 ; gain = 478.410
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 817.973 ; gain = 478.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 817.730 ; gain = 478.410
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 817.973 ; gain = 478.684
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "Clk_status" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -155,7 +159,7 @@ INFO: [Synth 8-5544] ROM "ROM" won't be mapped to Block RAM because address size
 INFO: [Synth 8-5544] ROM "Jump_Flag" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "sevenSegment_ROM" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 817.730 ; gain = 478.410
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 817.973 ; gain = 478.684
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -265,22 +269,22 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-6014] Unused sequential element Program_Counter_0/D_FF_0/Qbar_reg was removed.  [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/D_FF.vhd:49]
-WARNING: [Synth 8-6014] Unused sequential element Program_Counter_0/D_FF_1/Qbar_reg was removed.  [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/D_FF.vhd:49]
-WARNING: [Synth 8-6014] Unused sequential element Program_Counter_0/D_FF_2/Qbar_reg was removed.  [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/D_FF.vhd:49]
+WARNING: [Synth 8-6014] Unused sequential element Nanoprocessor_0/Program_Counter_0/D_FF_0/Qbar_reg was removed.  [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/D_FF.vhd:49]
+WARNING: [Synth 8-6014] Unused sequential element Nanoprocessor_0/Program_Counter_0/D_FF_1/Qbar_reg was removed.  [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/D_FF.vhd:49]
+WARNING: [Synth 8-6014] Unused sequential element Nanoprocessor_0/Program_Counter_0/D_FF_2/Qbar_reg was removed.  [C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/D_FF.vhd:49]
 INFO: [Synth 8-5545] ROM "Slow_Clk_0/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "Slow_Clk_0/Clk_status" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-3917] design Nanoprocessor has port Anode[3] driven by constant 1
-WARNING: [Synth 8-3917] design Nanoprocessor has port Anode[2] driven by constant 1
-WARNING: [Synth 8-3917] design Nanoprocessor has port Anode[1] driven by constant 1
-WARNING: [Synth 8-3917] design Nanoprocessor has port Anode[0] driven by constant 0
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_0/Q_reg[3]' (FDE) to 'Register_Bank_0/Reg_0/Q_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_0/Q_reg[2]' (FDE) to 'Register_Bank_0/Reg_0/Q_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_0/Q_reg[1]' (FDE) to 'Register_Bank_0/Reg_0/Q_reg[0]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Register_Bank_0/Reg_0/Q_reg[0] )
-WARNING: [Synth 8-3332] Sequential element (Register_Bank_0/Reg_0/Q_reg[0]) is unused and will be removed from module Nanoprocessor.
+WARNING: [Synth 8-3917] design MainProgram has port Anode[3] driven by constant 1
+WARNING: [Synth 8-3917] design MainProgram has port Anode[2] driven by constant 1
+WARNING: [Synth 8-3917] design MainProgram has port Anode[1] driven by constant 1
+WARNING: [Synth 8-3917] design MainProgram has port Anode[0] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'Nanoprocessor_0/Register_Bank_0/Reg_0/Q_reg[3]' (FDE) to 'Nanoprocessor_0/Register_Bank_0/Reg_0/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Nanoprocessor_0/Register_Bank_0/Reg_0/Q_reg[2]' (FDE) to 'Nanoprocessor_0/Register_Bank_0/Reg_0/Q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Nanoprocessor_0/Register_Bank_0/Reg_0/Q_reg[1]' (FDE) to 'Nanoprocessor_0/Register_Bank_0/Reg_0/Q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Nanoprocessor_0/Register_Bank_0/Reg_0/Q_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (Nanoprocessor_0/Register_Bank_0/Reg_0/Q_reg[0]) is unused and will be removed from module MainProgram.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 817.730 ; gain = 478.410
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 817.973 ; gain = 478.684
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -292,13 +296,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:00:48 . Memory (MB): peak = 820.266 ; gain = 480.945
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 817.973 ; gain = 478.684
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:49 . Memory (MB): peak = 842.109 ; gain = 502.789
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 838.699 ; gain = 499.410
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -309,20 +313,20 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_6/Q_reg[1]' (FDE) to 'Register_Bank_0/Reg_3/Q_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_3/Q_reg[1]' (FDE) to 'Register_Bank_0/Reg_4/Q_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_4/Q_reg[1]' (FDE) to 'Register_Bank_0/Reg_5/Q_reg[1]'
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_6/Q_reg[0]' (FDE) to 'Register_Bank_0/Reg_3/Q_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_3/Q_reg[0]' (FDE) to 'Register_Bank_0/Reg_4/Q_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_4/Q_reg[0]' (FDE) to 'Register_Bank_0/Reg_5/Q_reg[0]'
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_6/Q_reg[3]' (FDE) to 'Register_Bank_0/Reg_3/Q_reg[3]'
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_3/Q_reg[3]' (FDE) to 'Register_Bank_0/Reg_4/Q_reg[3]'
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_4/Q_reg[3]' (FDE) to 'Register_Bank_0/Reg_5/Q_reg[3]'
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_6/Q_reg[2]' (FDE) to 'Register_Bank_0/Reg_3/Q_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_3/Q_reg[2]' (FDE) to 'Register_Bank_0/Reg_4/Q_reg[2]'
-INFO: [Synth 8-3886] merging instance 'Register_Bank_0/Reg_4/Q_reg[2]' (FDE) to 'Register_Bank_0/Reg_5/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Nanoprocessor_0/Register_Bank_0/Reg_6/Q_reg[1]' (FDE) to 'Nanoprocessor_0/Register_Bank_0/Reg_3/Q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Nanoprocessor_0/Register_Bank_0/Reg_3/Q_reg[1]' (FDE) to 'Nanoprocessor_0/Register_Bank_0/Reg_4/Q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Nanoprocessor_0/Register_Bank_0/Reg_4/Q_reg[1]' (FDE) to 'Nanoprocessor_0/Register_Bank_0/Reg_5/Q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Nanoprocessor_0/Register_Bank_0/Reg_6/Q_reg[0]' (FDE) to 'Nanoprocessor_0/Register_Bank_0/Reg_3/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Nanoprocessor_0/Register_Bank_0/Reg_3/Q_reg[0]' (FDE) to 'Nanoprocessor_0/Register_Bank_0/Reg_4/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Nanoprocessor_0/Register_Bank_0/Reg_4/Q_reg[0]' (FDE) to 'Nanoprocessor_0/Register_Bank_0/Reg_5/Q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'Nanoprocessor_0/Register_Bank_0/Reg_6/Q_reg[3]' (FDE) to 'Nanoprocessor_0/Register_Bank_0/Reg_3/Q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Nanoprocessor_0/Register_Bank_0/Reg_3/Q_reg[3]' (FDE) to 'Nanoprocessor_0/Register_Bank_0/Reg_4/Q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Nanoprocessor_0/Register_Bank_0/Reg_4/Q_reg[3]' (FDE) to 'Nanoprocessor_0/Register_Bank_0/Reg_5/Q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Nanoprocessor_0/Register_Bank_0/Reg_6/Q_reg[2]' (FDE) to 'Nanoprocessor_0/Register_Bank_0/Reg_3/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Nanoprocessor_0/Register_Bank_0/Reg_3/Q_reg[2]' (FDE) to 'Nanoprocessor_0/Register_Bank_0/Reg_4/Q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Nanoprocessor_0/Register_Bank_0/Reg_4/Q_reg[2]' (FDE) to 'Nanoprocessor_0/Register_Bank_0/Reg_5/Q_reg[2]'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:49 . Memory (MB): peak = 846.227 ; gain = 506.906
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 842.410 ; gain = 503.121
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -346,7 +350,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:50 . Memory (MB): peak = 846.227 ; gain = 506.906
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 842.410 ; gain = 503.121
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -359,7 +363,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 846.227 ; gain = 506.906
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 842.410 ; gain = 503.121
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -371,25 +375,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 846.227 ; gain = 506.906
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 842.410 ; gain = 503.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 846.227 ; gain = 506.906
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 842.410 ; gain = 503.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 846.227 ; gain = 506.906
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 842.410 ; gain = 503.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 846.227 ; gain = 506.906
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 842.410 ; gain = 503.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -419,27 +423,28 @@ Report Cell Usage:
 +------+-------+------+
 
 Report Instance Areas: 
-+------+--------------------+----------------+------+
-|      |Instance            |Module          |Cells |
-+------+--------------------+----------------+------+
-|1     |top                 |                |   133|
-|2     |  Program_Counter_0 |Program_Counter |    36|
-|3     |    D_FF_0          |D_FF            |     1|
-|4     |    D_FF_1          |D_FF_3          |    18|
-|5     |    D_FF_2          |D_FF_4          |    17|
-|6     |  Register_Bank_0   |Register_Bank   |    23|
-|7     |    Reg_1           |Register_4bit   |     4|
-|8     |    Reg_2           |Register_4bit_0 |     4|
-|9     |    Reg_5           |Register_4bit_1 |     4|
-|10    |    Reg_7           |Register_4bit_2 |    11|
-|11    |  Slow_Clk_0        |Slow_Clk        |    54|
-+------+--------------------+----------------+------+
++------+----------------------+----------------+------+
+|      |Instance              |Module          |Cells |
++------+----------------------+----------------+------+
+|1     |top                   |                |   133|
+|2     |  Nanoprocessor_0     |Nanoprocessor   |    59|
+|3     |    Program_Counter_0 |Program_Counter |    36|
+|4     |      D_FF_0          |D_FF            |     1|
+|5     |      D_FF_1          |D_FF_3          |    18|
+|6     |      D_FF_2          |D_FF_4          |    17|
+|7     |    Register_Bank_0   |Register_Bank   |    23|
+|8     |      Reg_1           |Register_4bit   |     4|
+|9     |      Reg_2           |Register_4bit_0 |     4|
+|10    |      Reg_5           |Register_4bit_1 |     4|
+|11    |      Reg_7           |Register_4bit_2 |    11|
+|12    |  Slow_Clk_0          |Slow_Clk        |    54|
++------+----------------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:51 . Memory (MB): peak = 846.227 ; gain = 506.906
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 842.410 ; gain = 503.121
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 846.227 ; gain = 179.703
-Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:51 . Memory (MB): peak = 846.227 ; gain = 506.906
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 842.410 ; gain = 175.645
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:30 . Memory (MB): peak = 842.410 ; gain = 503.121
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -449,11 +454,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-110 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+113 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:54 . Memory (MB): peak = 846.227 ; gain = 519.008
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 842.410 ; gain = 515.445
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.runs/synth_1/Nanoprocessor.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file Nanoprocessor_utilization_synth.rpt -pb Nanoprocessor_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 846.227 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed May 14 11:21:00 2025...
+INFO: [Common 17-1381] The checkpoint 'C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.runs/synth_1/MainProgram.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MainProgram_utilization_synth.rpt -pb MainProgram_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 842.410 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed May 14 21:44:20 2025...

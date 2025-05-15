@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -43,13 +42,14 @@ read_vhdl -library xil_defaultlib {
   C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Mux_2way_3bit.vhd
   C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Mux_2way_4bit.vhd
   C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Mux_8way_4bit.vhd
+  C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd
   C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Program_Counter.vhd
   C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Program_ROM.vhd
   C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/RCA_4.vhd
   C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Register_4bit.vhd
   C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Register_Bank.vhd
   C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Slow_Clk.vhd
-  C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd
+  C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/MainProgram.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -59,18 +59,18 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/janit/OneDrive/Desktop/Vivado/Lab 8/Basys3Labs.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/janit/OneDrive/Desktop/Vivado/Lab 8/Basys3Labs.xdc}}]
+read_xdc C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/constrs_1/new/Basys3Labs.xdc
+set_property used_in_implementation false [get_files C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/constrs_1/new/Basys3Labs.xdc]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
 
-synth_design -top Nanoprocessor -part xc7a35tcpg236-1
+synth_design -top MainProgram -part xc7a35tcpg236-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef Nanoprocessor.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file Nanoprocessor_utilization_synth.rpt -pb Nanoprocessor_utilization_synth.pb"
+write_checkpoint -force -noxdef MainProgram.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file MainProgram_utilization_synth.rpt -pb MainProgram_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]
