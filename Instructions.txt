@@ -1,0 +1,23 @@
+Reset Mechanism: The nanoprocessor is reset by pressing and holding the btnC 
+button, initializing the system. 
+
+Clock Speed: The internal clock was reduced from 100 MHz to 1 MHz using a 
+slow clock, making the calculation process visible to the naked eye. 
+
+LED Outputs: 
+LED0–LED3: Display the 4-bit signed output of the R7 register in two's 
+complement. 
+LED14: Overflow Flag 
+LED15: Zero Flag 
+
+7-Segment Display: The rightmost segment shows the magnitude of the R7 
+register output. 
+
+10 001 000 0001 -- MOVI R1, 1           -- Move immediate value 1 into register R1              
+10 010 000 0010 -- MOVI R2, 2           -- Move immediate value 2 into register R2    
+10 011 000 0011 -- MOVI R3, 3           -- Move immediate value 3 into register R3    
+10 111 000 0000 -- MOVI R7, 0           -- Move immediate value 0 into register R7   
+00 111 001 0000 -- ADD R7, R1           -- Add the values in R1,R7 and store in R7   
+00 111 010 0000 -- ADD R7, R2           -- Add the values in R2,R7 and store in R7   
+00 111 011 0000 -- ADD R7, R3           -- Add the values in R3,R7 and store in R7   
+11 000 0000 111 -- JZR, R0              -- Jump to instruction 7 if R0 is zero              
