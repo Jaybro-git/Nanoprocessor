@@ -1,9 +1,0 @@
-[submodule "Nanoprocessor - Additional Features"]
-	path = Nanoprocessor - Additional Features
-	url = https://github.com/Jaybro-git/Nanoprocessor.git
-[submodule "Nanoprocessor - Optimized - LUT15"]
-	path = Nanoprocessor - Optimized - LUT15
-	url = https://github.com/Jaybro-git/Nanoprocessor.git
-[submodule "Nanoprocessor - Optimized Design"]
-	path = Nanoprocessor - Optimized Design
-	url = https://github.com/Jaybro-git/Nanoprocessor.git
