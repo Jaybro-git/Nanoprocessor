@@ -1,0 +1,23 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - AdditionalFeatures - 8bit/Nanoprocessor.srcs/sim_1/new/Divider_4bit_tb.vhd,1747653632,vhdl,,,,divider_8bit_tb,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - AdditionalFeatures - 8bit/Nanoprocessor.srcs/sim_1/new/Nanoprocessor_tb.vhd,1747668293,vhdl,,,,nanoprocessor_tb,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - AdditionalFeatures - 8bit/Nanoprocessor.srcs/sources_1/ip/c_addsub_0/sim/c_addsub_0.vhd,1747666340,vhdl,,,,c_addsub_0,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - AdditionalFeatures - 8bit/Nanoprocessor.srcs/sources_1/ip/c_counter_binary_0/sim/c_counter_binary_0.vhd,1747369308,vhdl,,,,c_counter_binary_0,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - AdditionalFeatures - 8bit/Nanoprocessor.srcs/sources_1/new/Add_Sub_Unit.vhd,1747666374,vhdl,,,,add_sub_unit,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - AdditionalFeatures - 8bit/Nanoprocessor.srcs/sources_1/new/Comp.vhd,1747667400,vhdl,,,,comp,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - AdditionalFeatures - 8bit/Nanoprocessor.srcs/sources_1/new/Divider_8bit.vhd,1747666519,vhdl,,,,divider_12bit,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - AdditionalFeatures - 8bit/Nanoprocessor.srcs/sources_1/new/Even_Odd.vhd,1747666397,vhdl,,,,even_odd,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - AdditionalFeatures - 8bit/Nanoprocessor.srcs/sources_1/new/Instruction_Decoder.vhd,1747664298,vhdl,,,,instruction_decoder,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - AdditionalFeatures - 8bit/Nanoprocessor.srcs/sources_1/new/Multiplier_4bit.vhd,1747666589,vhdl,,,,multiplier_6bit,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - AdditionalFeatures - 8bit/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd,1747668026,vhdl,,,,nanoprocessor,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - AdditionalFeatures - 8bit/Nanoprocessor.srcs/sources_1/new/Program_Counter.vhd,1747369549,vhdl,,,,program_counter,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - AdditionalFeatures - 8bit/Nanoprocessor.srcs/sources_1/new/Program_ROM.vhd,1747669516,vhdl,,,,program_rom,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - AdditionalFeatures - 8bit/Nanoprocessor.srcs/sources_1/new/Register_Bank.vhd,1747667629,vhdl,,,,register_bank,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sim_1/new/TB_Adder_3bit.vhd,1747121615,vhdl,,,,tb_adder_3bit,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Adder_3bit.vhd,1747058269,vhdl,,,,adder_3bit,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/FA.vhd,1740501165,vhdl,,,,fa,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/HA.vhd,1740500918,vhdl,,,,ha,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/RCA_4.vhd,1747037329,vhdl,,,,rca_4,,,,,,,,

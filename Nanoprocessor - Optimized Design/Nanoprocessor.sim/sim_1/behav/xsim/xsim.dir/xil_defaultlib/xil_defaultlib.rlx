@@ -1,0 +1,22 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - Optimized - Copy/Nanoprocessor.srcs/sim_1/new/TB_Add_Sub_Unit.vhd,1747121826,vhdl,,,,tb_add_sub_unit,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - Optimized - Copy/Nanoprocessor.srcs/sources_1/ip/c_addsub_0/sim/c_addsub_0.vhd,1747692981,vhdl,,,,c_addsub_0,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - Optimized - Copy/Nanoprocessor.srcs/sources_1/ip/c_counter_binary_0/sim/c_counter_binary_0.vhd,1747369308,vhdl,,,,c_counter_binary_0,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - Optimized - Copy/Nanoprocessor.srcs/sources_1/ip/c_counter_binary_1/sim/c_counter_binary_1.vhd,1747388504,vhdl,,,,c_counter_binary_1,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - Optimized - Copy/Nanoprocessor.srcs/sources_1/new/Add_Sub_Unit.vhd,1747694091,vhdl,,,,add_sub_unit,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - Optimized - Copy/Nanoprocessor.srcs/sources_1/new/Instruction_Decoder.vhd,1747369115,vhdl,,,,instruction_decoder,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - Optimized - Copy/Nanoprocessor.srcs/sources_1/new/LUT_16_7.vhd,1747071890,vhdl,,,,lut_16_7,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - Optimized - Copy/Nanoprocessor.srcs/sources_1/new/MainProgram.vhd,1747379178,vhdl,,,,mainprogram,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - Optimized - Copy/Nanoprocessor.srcs/sources_1/new/Nanoprocessor.vhd,1747363510,vhdl,,,,nanoprocessor,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - Optimized - Copy/Nanoprocessor.srcs/sources_1/new/Program_Counter.vhd,1747369549,vhdl,,,,program_counter,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - Optimized - Copy/Nanoprocessor.srcs/sources_1/new/Program_ROM.vhd,1747044746,vhdl,,,,program_rom,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - Optimized - Copy/Nanoprocessor.srcs/sources_1/new/Register_Bank.vhd,1747243440,vhdl,,,,register_bank,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor - Optimized - Copy/Nanoprocessor.srcs/sources_1/new/Slow_Clk.vhd,1747388621,vhdl,,,,slow_clk,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sim_1/new/TB_Adder_3bit.vhd,1747121615,vhdl,,,,tb_adder_3bit,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/Adder_3bit.vhd,1747058269,vhdl,,,,adder_3bit,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/FA.vhd,1740501165,vhdl,,,,fa,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/HA.vhd,1740500918,vhdl,,,,ha,,,,,,,,
+C:/Users/janit/OneDrive/Desktop/Vivado/Nanoprocessor/Nanoprocessor.srcs/sources_1/new/RCA_4.vhd,1747037329,vhdl,,,,rca_4,,,,,,,,
